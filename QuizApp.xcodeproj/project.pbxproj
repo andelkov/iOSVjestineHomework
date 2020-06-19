@@ -47,7 +47,6 @@
 		A17C0042249D577900831BFC /* QuizApp.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = A17C003D249D577900831BFC /* QuizApp.xcworkspace */; };
 		A17C0043249D577900831BFC /* Quiz+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C003E249D577900831BFC /* Quiz+CoreDataProperties.swift */; };
 		A17C0044249D577900831BFC /* Quiz+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C003F249D577900831BFC /* Quiz+CoreDataClass.swift */; };
-		A17C004A249D5BC100831BFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A17C0049249D5BC100831BFC /* Default-568h@2x.png */; };
 		BC5B424F953679802143FE95 /* Pods_QuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1326960C17A34FE28E82883E /* Pods_QuizApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +96,6 @@
 		A17C003D249D577900831BFC /* QuizApp.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = QuizApp.xcworkspace; sourceTree = SOURCE_ROOT; };
 		A17C003E249D577900831BFC /* Quiz+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Quiz+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A17C003F249D577900831BFC /* Quiz+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Quiz+CoreDataClass.swift"; sourceTree = "<group>"; };
-		A17C0049249D5BC100831BFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +113,6 @@
 		68952B80224FBEEB005D2C10 = {
 			isa = PBXGroup;
 			children = (
-				A17C0049249D5BC100831BFC /* Default-568h@2x.png */,
 				68952B8B224FBEEB005D2C10 /* QuizApp */,
 				68952B8A224FBEEB005D2C10 /* Products */,
 				A5433A617CEA5A87E5DCA1EE /* Pods */,
@@ -308,7 +305,6 @@
 				A17C0042249D577900831BFC /* QuizApp.xcworkspace in Resources */,
 				688B5F7A2260E16C001CDFFE /* LoginViewController.xib in Resources */,
 				68952B94224FBEEC005D2C10 /* Assets.xcassets in Resources */,
-				A17C004A249D5BC100831BFC /* Default-568h@2x.png in Resources */,
 				68CC66B8225117AF007573E1 /* HomeViewController.xib in Resources */,
 				68B72D2922844C7800D3C245 /* QuizTableViewCell.xib in Resources */,
 				68CC66BA225130BF007573E1 /* QuestionView.xib in Resources */,
