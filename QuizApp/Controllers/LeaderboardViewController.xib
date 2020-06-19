@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeaderboardViewController" customModule="QuizApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="9kd-rW-pCY" id="ncG-G9-iYX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="x4q-xE-oFZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzF-0H-iHm">
+                    <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                    <state key="normal" title="Close"/>
+                    <connections>
+                        <action selector="closeLeaderboard:" destination="-1" eventType="touchUpInside" id="gqb-0t-IhI"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9kd-rW-pCY">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9kd-rW-pCY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2U5-Em-422"/>
+                <constraint firstItem="9kd-rW-pCY" firstAttribute="top" secondItem="yzF-0H-iHm" secondAttribute="bottom" id="5OE-X6-jdt"/>
+                <constraint firstItem="yzF-0H-iHm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="80p-qv-Mxg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9kd-rW-pCY" secondAttribute="bottom" id="PIh-dh-Aju"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yzF-0H-iHm" secondAttribute="trailing" id="ada-Bw-hOq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9kd-rW-pCY" secondAttribute="trailing" id="je0-ef-inG"/>
+                <constraint firstItem="yzF-0H-iHm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vtX-EM-5ui"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>
