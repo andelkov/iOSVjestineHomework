@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="nsmAnswers" attributeType="Transformable" customClassName="[String]" syncable="YES"/>
+        <attribute name="nsmCorrectAnswer" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nsmId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nsmQuestion" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Quiz" representedClassName="Quiz" syncable="YES">
+        <attribute name="nsmCategory" attributeType="String" syncable="YES"/>
+        <attribute name="nsmDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nsmId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nsmImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nsmLevel" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nsmTitle" attributeType="String" syncable="YES"/>
+        <relationship name="nsmQuestions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Quiz" positionX="-312.88671875" positionY="-103.26953125" width="128" height="148"/>
+        <element name="Question" positionX="-54" positionY="18" width="128" height="103"/>
+    </elements>
+</model>
