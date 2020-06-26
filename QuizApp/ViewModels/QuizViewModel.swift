@@ -1,9 +1,10 @@
 import UIKit
-
+//ovaj viewModel pruza informacije o modelu (jednom Quiz-u)
 class QuizViewModel {
     
     private let quiz: Quiz?
-    
+    // Ovdje viewModel ne dohvaca sadrzaj sa servera vec prima jedan Quiz, prethodno dohvacen
+    // Teoretski o ovdje mozemo dohvacati dodatne informacije o Quizu-u
     init(quiz: Quiz?) {
         self.quiz = quiz
     }

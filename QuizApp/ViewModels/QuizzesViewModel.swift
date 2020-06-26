@@ -1,6 +1,8 @@
 import Foundation
 import CoreData
 
+
+// Struktura koja sluzi da se QuizTableViewCell napuni njenim podacima
 struct QuizCellModel {
     
     let id: Int
@@ -18,8 +20,11 @@ struct QuizCellModel {
     }
 }
 
+// QuizzesViewModel je razred koji je veza izmedu QuizzesViewController-a i modela,
+// ovaj razred pruza metode preko kojih QuizzesViewController dohvaca informacije o modelu ili kroz koje propagira promjene modela (konkretno model je lista Review-ova)
+
 class QuizzesViewModel {
-    
+
     private var quizzes: [Quiz]?
     private var isFetched: Bool = false
     
@@ -31,7 +36,8 @@ class QuizzesViewModel {
         
         return NSFetchedResultsController<Quiz>(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
     }()
-    
+    //     Metoda fetchQuizzes sada dohvaca Quiz-ove sa servera i sprema ih u bazu podataka
+    //     Nakon dohvacanja review-ova i spremanja u bazu, dohvacaju se svi review-ovi iz baze i prikazuju u QuizzesViewControlleru
     public func fetchQuizzes(completion: @escaping () -> Void) {
         if Reachability.isConnectedToNetwork() && !self.isFetched {
             QuizService().fetchQuizzes(completion: { [weak self] (quizzes) in
