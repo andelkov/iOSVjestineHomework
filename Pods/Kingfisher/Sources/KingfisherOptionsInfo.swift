@@ -198,7 +198,7 @@ extension Collection where Iterator.Element == KingfisherOptionsInfoItem {
 
 public extension Collection where Iterator.Element == KingfisherOptionsInfoItem {
     /// The target `ImageCache` which is used.
-     var targetCache: ImageCache? {
+    public var targetCache: ImageCache? {
         if let item = lastMatchIgnoringAssociatedValue(.targetCache(.default)),
             case .targetCache(let cache) = item
         {
@@ -208,7 +208,7 @@ public extension Collection where Iterator.Element == KingfisherOptionsInfoItem 
     }
     
     /// The original `ImageCache` which is used.
-     var originalCache: ImageCache? {
+    public var originalCache: ImageCache? {
         if let item = lastMatchIgnoringAssociatedValue(.originalCache(.default)),
             case .originalCache(let cache) = item
         {
@@ -218,7 +218,7 @@ public extension Collection where Iterator.Element == KingfisherOptionsInfoItem 
     }
     
     /// The `ImageDownloader` which is specified.
-     var downloader: ImageDownloader? {
+    public var downloader: ImageDownloader? {
         if let item = lastMatchIgnoringAssociatedValue(.downloader(.default)),
             case .downloader(let downloader) = item
         {

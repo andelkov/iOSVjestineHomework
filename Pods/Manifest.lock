@@ -7,7 +7,7 @@ DEPENDENCIES:
   - PureLayout
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Kingfisher
     - PureLayout
 
@@ -15,6 +15,6 @@ SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
 
-PODFILE CHECKSUM: 96853bb136400be091bf691d44dcf3f0b9cd5be7
+PODFILE CHECKSUM: d89171b05999c5ccd41f81634a905a64f48dbccb
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.10.2

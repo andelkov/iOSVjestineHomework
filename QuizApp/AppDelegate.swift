@@ -9,7 +9,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let vc = AuthorizationUtils.isUserLoggedIn() ? TabBarViewController() : LoginViewController()
+        //overriding the authorization step 
+        let vc = TabBarViewController() //AuthorizationUtils.isUserLoggedIn() ? TabBarViewController() : LoginViewController()
         
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
